@@ -18,7 +18,7 @@ class UserController extends Controller
 
     public function reserve()
     {
-        return View::make('reserve');
+        return View::make('reserve', array('username_taken' => false));
     }
 
     public function register()
@@ -29,16 +29,7 @@ class UserController extends Controller
 
         if($user_existed != null)
         {
-            return View::make('fail');
-        }
-
-        if($user != null)
-        {
-            return View::make('emailconfirmation');
-        }
-        else
-        {
-            return View::make('fail');
+            return View::make('reserve', array('username_taken' => true));
         }
 
         $user->user_name =  Request::input('user_name');
