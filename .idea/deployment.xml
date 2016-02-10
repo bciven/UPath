@@ -5,7 +5,7 @@
       <paths name="XAMPP APACHE">
         <serverdata>
           <mappings>
-            <mapping deploy="" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/UPath" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

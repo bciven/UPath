@@ -33,7 +33,7 @@
 
             @if ($username_taken === true)
             <div class="alert alert-danger">
-                <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+                <strong>Error!</strong> Sorry, this username has been already taken.
             </div>
             @endif
 
